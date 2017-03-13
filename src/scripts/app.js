@@ -6,3 +6,4 @@ buttonSearchForm();
 autoCompleteSearchForm();
 listStoredFilters();
 deleteStoredSearch();
+inputToTextarea()

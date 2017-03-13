@@ -1,6 +1,9 @@
 .search-form
   &__text
-    margin-right 10px   
+    border 1px solid #aaa  
+    border-radius 5px
+    height 30px
+    margin-right 10px 
   &__button
     background #ccc
     border 0px solid #111
@@ -13,7 +16,19 @@
     &--disabled
       background #999
       color #ccc
-      
+  &--fieldset
+    align-items center    
+    border 0
+    display flex
+  &__textarea
+    border 1px solid #aaa
+    border-radius 5px
+    height 30px
+    margin-right 10px
+    width 270px
+    &--hide
+      display none
+        
 /*
     for responsive
 */

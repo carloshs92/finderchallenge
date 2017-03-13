@@ -4,7 +4,7 @@ function autoCompleteSearchForm(){
   dom = {}
   
   st = {
-    txtSearch: "txtAutocomplete"
+    txtSearch: "#txtAutocomplete"
   }
 
   global = {
@@ -26,13 +26,13 @@ function autoCompleteSearchForm(){
   }
 
   catchDom = function() {
-    dom.txtSearch = document.getElementById(st.txtSearch);
+    dom.txtSearch = $(st.txtSearch);
   }
 
   afterCatchDom = function() {
-    new Awesomplete(dom.txtSearch, {
+    new Awesomplete(dom.txtSearch[0], {
       minChars: 3,
-      maxItems: 15,
+      maxItems: 7,
       list: global.list
     });
   }
