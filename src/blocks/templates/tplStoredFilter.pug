@@ -1,0 +1,10 @@
+script#tplStoredFilter(type="text/template")
+  <% _.each(data.saved, function(search){ %>
+  li.filters-item.js_filters_item_container
+    a.filters__link(href!="<%= search.url %>") <%= search.label %>
+    span.filters-options
+      span.filters-option
+        img.filters-option__img(src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/new-24-16.png", width="16", height="16")
+      span.filters-option.js_delete_stored_search
+        img.filters-option__img(src="https://cdn2.iconfinder.com/data/icons/25-free-ui-icons/40/trash_bin-16.png", width="16", height="16")
+  <% }) %>

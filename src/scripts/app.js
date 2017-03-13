@@ -2,4 +2,7 @@
   main script for only runs every function
 */
 
-searchForm();
+buttonSearchForm();
+autoCompleteSearchForm();
+listStoredFilters();
+deleteStoredSearch();

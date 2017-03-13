@@ -2,10 +2,21 @@
   &__text
     margin-right 10px   
   &__button
-    margin-right 10px  
+    background #ccc
+    border 0px solid #111
+    color #333
+    margin-right 10px
+    padding 5px 10px
+    transition background 0.5s ease-in
+    &:hover:not(&--disabled)
+      background #bbb
+    &--disabled
+      background #999
+      color #ccc
+      
 /*
     for responsive
 */
 .search-form
-    +below(650px)
-        display none
+  +below(650px)
+    display none

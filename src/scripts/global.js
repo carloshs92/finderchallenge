@@ -2,7 +2,7 @@
   constants and global functions
 */
 
-var JSON_FILE = '/books_schema.json';
+var JSON_FILE = '/books-schema.json';
 
 /*
  @method loadJSON

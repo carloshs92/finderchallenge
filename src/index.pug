@@ -6,6 +6,7 @@ html(lang="es")
     meta(viewport="width=device-width, initial-scale=1.0")
     link(href="https://fonts.googleapis.com/css?family=Proxima+Nova", rel="stylesheet", type="text/css")
     link(href="/vendor/pure/pure-min.css", rel="stylesheet")
+    link(href="/vendor/awesomplete/awesomplete.css", rel="stylesheet")
     link(href="/styles/index.css", rel="stylesheet")
 
   body
@@ -15,14 +16,25 @@ html(lang="es")
           h1.logo Finder challenge!
         .header__search-form.pure-u-3-5
           include blocks/search-form
-      aside.filters.pure-u-6-24
+      aside.side-bar.pure-u-6-24
+        include blocks/filters
       content.pure-u-18-24
+        include blocks/articles
+        include blocks/pagination
       footer.pure-u-1
 
+    //- templates
+    include blocks/templates/tplStoredFilter
+
     //- third party libraries
+    script(src="/vendor/jquery/dist/jquery.min.js")
+    script(src="/vendor/awesomplete/awesomplete.js")
     script(src="/vendor/underscore/underscore-min.js")
 
     //- app scripts self
     script(src="/scripts/global.js")
-    script(src="/scripts/search-form.js")
+    script(src="/scripts/apps/button-search-form.js")
+    script(src="/scripts/apps/autocomplete-search-form.js")
+    script(src="/scripts/apps/list-stored-filters.js")
+    script(src="/scripts/apps/delete-stored-search.js")
     script(src="/scripts/app.js")

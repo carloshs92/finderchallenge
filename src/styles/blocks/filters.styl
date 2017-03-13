@@ -1,0 +1,21 @@
+.filters
+  &__title
+    font-weight bold
+  &__list
+    list-style-type none  
+  &-item
+    cursor pointer
+    display flex
+    justify-content space-between
+    height 20px
+    &:hover
+      .filters-options
+        display block
+  &-options
+    display none
+  &-option
+    margin 0 3px
+    &__img
+      transition transform 0.2s ease-in
+      &:hover
+        transform scale(1.1, 1.1)
